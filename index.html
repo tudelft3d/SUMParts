@@ -244,26 +244,30 @@
 
 
 
-    <section class="section hero is-light">
-        <div class="container is-max-desktop">
-            <div class="columns is-centered has-text-centered">
-                <div class="column is-four-fifths">
-                    <h2 class="title is-3">Overview</h2>
-                    <div class="content has-text-justified">
-                        <p>
-                            Semantic segmentation in urban scene analysis has mainly focused on images or point clouds, while textured meshes—offering richer spatial representation—remain underexplored. This paper introduces SUM Parts, the <strong>first</strong> large-scale dataset for urban textured meshes with part-level semantic labels, covering about 2.5 km<sup>2</sup> with 21 classes. The dataset was created using our own annotation tool, which supports both face- and texture-based annotations with efficient interactive selection. We also provide a comprehensive evaluation of 3D semantic segmentation and interactive annotation methods on this dataset.
-                        </p>
+    <section class="hero is-small is-light">
+        <div class="hero-body">
+            <div>
+                <div class="container is-max-desktop">
+                    <h2 class="title is-3 has-text-centered">Annotation</h2>
+                    <div style="max-width: 100%; overflow: hidden; text-align: center;">
+                        <img src="static/images/annotation_methods.png"
+                             alt="Annotation"
+                             style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
                     </div>
+                    <p class="content has-text-justified">
+                        Our annotation aims to achieve precise semantic labeling with significantly improved efficiency for urban meshes. Our tool features two main modules for part-level semantic annotation: face-based annotation for triangle faces and texture-based annotation for texture pixels.  We enhance the efficiency of both modules by incorporating interactive selection and template-matching strategies. We invited five individuals with experience in remote sensing to manually annotate the dataset using our tool: two focused on face-based annotation, two on texture pixel-based annotation, and one reviewed and corrected the annotations. The entire annotation process took approximately 640 hours in total.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- End youtube video -->
     <!-- Video carousel -->
     <section class="hero is-small">
         <div class="hero-body">
             <div class="container">
-                <h2 class="title is-3">Another Carousel</h2>
+                <!--<h2 class="title is-3">Another Carousel</h2>-->
                 <div id="results-carousel" class="carousel results-carousel">
                     <div class="item item-video1">
                         <video poster="" id="video1" autoplay controls muted loop height="100%">
