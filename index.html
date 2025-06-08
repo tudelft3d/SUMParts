@@ -150,16 +150,48 @@
 <!-- Teaser video-->
 <section class="hero teaser">
     <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
+        <div class="columns">
             <div class="column is-four-fifths">
-                <h5><b>Video</b></h5>
+                <!-- 使用语义化标签<strong>代替<b>，并移除不必要的居中类 -->
+                <h5><strong>Video</strong></h5>
                 <div class="hero-body">
-                    <iframe poster="" id="tree" width="560" height="315" src="https://www.youtube.com/embed/CUi1Hf_GSlQ?si=Wtw89zKeSvM-qcGS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <!-- 响应式视频容器 -->
+                    <div class="video-container">
+                        <iframe 
+                            id="tree" 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/CUi1Hf_GSlQ?si=Wtw89zKeSvM-qcGS" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen
+                        ></iframe>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<!-- End teaser video -->
+
+<!-- 添加响应式视频CSS -->
+<style>
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 宽高比 */
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
