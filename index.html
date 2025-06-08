@@ -149,49 +149,22 @@
 
 <!-- Teaser video-->
 <section class="hero teaser">
-    <div class="container is-max-desktop">
-        <div class="columns">
-            <div class="column is-four-fifths">
-                <!-- 使用语义化标签<strong>代替<b>，并移除不必要的居中类 -->
-                <h5 class="text-center"><strong>Video</strong></h5>
-                <div class="hero-body">
-                    <!-- 响应式视频容器 -->
-                    <div class="video-container">
-                        <iframe 
-                            id="tree" 
-                            width="560" 
-                            height="315" 
-                            src="https://www.youtube.com/embed/CUi1Hf_GSlQ?si=Wtw89zKeSvM-qcGS" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin" 
-                            allowfullscreen
-                        ></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="container is-max-desktop">
+      <div class="hero-body">
+          <h2 class="title is-3">Video</h2>
+          <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+              <iframe src="https://www.youtube-nocookie.com/embed/CUi1Hf_GSlQ?si=5xTmVYYqVlhrF7CT&autoplay=1&mute=1&loop=1&playlist=CUi1Hf_GSlQ"
+                      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen>
+              </iframe>
+          </div>
+      </div>
+  </div>
 </section>
-<!-- End teaser video -->
-
-<!-- 添加响应式视频CSS -->
-<style>
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 宽高比 */
-    height: 0;
-    overflow: hidden;
-}
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-</style>
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
