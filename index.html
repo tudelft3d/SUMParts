@@ -217,7 +217,7 @@
                 <div class="columns is-centered has-text-centered">
                     <div class="column is-four-fifths">
                         <h2 class="title is-3">Video Presentation</h2>
-                        <div class="publication-video" width="100%">
+                        <div class="publication-video" style="max-width: 100%; overflow: hidden; text-align: center;">
                             <!--style="max-width: 100%; overflow: hidden; text-align: center;"-->
                             <iframe src="https://www.youtube-nocookie.com/embed/CUi1Hf_GSlQ?si=zCqNQsab2DUkKwW5" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
@@ -402,7 +402,69 @@
         </div>
     </section>
 
+    <section class="section" style="padding: 0;">
+        <div class="container is-max-desktop" style="padding: 0;">
+            <!-- 修改1：移除 columns 容器 -->
+            <!-- 修改2：只保留一个 column -->
+            <div class="column">
+                <!-- 注意：移除了 columns 容器 -->
+                <video controls
+                       autoplay
+                       muted
+                       loop
+                       playsinline
+                       style="width: 100%; display: block;">
+                    <source src="./static/videos/annotation_results.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
 
+    <section class="hero">
+        <div class="hero-body">
+            <div>
+                <div class="container is-max-desktop">
+                    <h2 class="title is-3 has-text-centered">Benchmarks</h2>
+                    <div style="max-width: 100%; overflow: hidden; text-align: center;">
+                        <img src="static/images/label_distrib.png"
+                             alt="Benchmarks"
+                             style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                    </div>
+                    <p class="content has-text-justified">
+                        In the semantic annotation process, we defined two label types: face and pixel labels. The face labeling track includes 12 labels, excluding `unclassified'. We evaluated the impact of four mesh point cloud sampling strategies on semantic segmentation. To control point cloud density, the number of points for random and Poisson-disk samples matched the superpixel texture sample size, while face-centered samples always matched the number of mesh faces. The pixel labeling track consists of 19 semantic classes, including all semantic labels except for `terrain' and `unclassified'. We evaluated the impact of three sampling methods—random, Poisson-disk, and superpixel texture sampling—on semantic segmentation performance.
+                        <br> We evaluate state-of-the-art 3D semantic segmentation methods on our datasets, including mesh-based methods like RF-MRF, SUM-RF, and PSSNet, and point cloud based approaches like PointNet, PointNet++, superpoint graphs (SPG), SparseConvUnet, RandLA-Net, KPConv, PointNext, Point Transformer V3 (PointTransV3), and PointVector.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding: 0;">
+        <div class="container is-max-desktop" style="padding: 0;">
+            <div class="columns is-gapless" style="margin: 0;">
+                <div class="column">
+                    <video controls
+                           autoplay
+                           muted
+                           loop
+                           playsinline
+                           style="width: 100%; display: block;">
+                        <source src="./static/videos/face_label_pred.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="column">
+                    <video controls
+                           autoplay
+                           muted
+                           loop
+                           playsinline
+                           style="width: 100%; display: block;">
+                        <source src="./static/videos/tex_label_pred.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- End video carousel -->
     <!-- Paper poster -->
@@ -419,22 +481,44 @@
       </section>-->
     <!--End paper poster -->
     <!--BibTex citation -->
-    <!--<section class="section" id="BibTeX">
+    <section class="section" id="BibTeX">
         <div class="container is-max-desktop content">
-          <h2 class="title">BibTeX</h2>
-          <pre><code>BibTex Code Here</code></pre>
+            <h2 class="title">BibTeX</h2>
+            <pre><code>
+            @InProceedings{Gao_2025_CVPR,
+            author    = {Gao, Weixiao and Nan, Liangliang and Ledoux, Hugo},
+            title     = {SUM Parts: Benchmarking Part-Level Semantic Segmentation of Urban Meshes},
+            booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+            month     = {June},
+            year      = {2025},
+            pages     = {24474-24484}
+            }
+        </code></pre>
+            <pre><code>
+            @article{sum2021,
+            author = {Weixiao Gao and Liangliang Nan and Bas Boom and Hugo Ledoux},
+            title = {SUM: A Benchmark Dataset of Semantic Urban Meshes},
+            journal = {ISPRS Journal of Photogrammetry and Remote Sensing},
+            volume = {179},
+            pages = {108-120},
+            year={2021},
+            issn = {0924-2716},
+            doi = {10.1016/j.isprsjprs.2021.07.008},
+            url = {https://www.sciencedirect.com/science/article/pii/S0924271621001854},
+            }
+        </code></pre>
         </div>
-    </section>-->
+    </section>
     <!--End BibTex citation -->
-    <!--<footer class="footer">
+
+    <footer class="footer">
       <div class="container">
         <div class="columns is-centered">
           <div class="column is-8">
             <div class="content">
 
               <p>
-                This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-                You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
                 Commons Attribution-ShareAlike 4.0 International License</a>.
               </p>
 
@@ -442,9 +526,28 @@
           </div>
         </div>
       </div>
-    </footer>-->
-    <!-- Statcounter tracking code -->
-    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+    </footer>
+
+    <!-- Default Statcounter code for SUMParts https://tudelft3d.github.io/SUMParts/
+    -->
+    <script type="text/javascript">
+        var sc_project = 13142499;
+        var sc_invisible = 0;
+        var sc_security = "54ea003f";
+        var scJsHost = "https://";
+        document.write("<sc" + "ript type='text/javascript' src='" + scJsHost +
+            "statcounter.com/counter/counter.js'></" + "script>");
+    </script>
+    <noscript>
+        <div class="statcounter">
+            <a title="Web Analytics"
+               href="https://statcounter.com/" target="_blank">
+                <img class="statcounter"
+                     src="https://c.statcounter.com/13142499/0/54ea003f/0/" alt="Web Analytics"
+                     referrerPolicy="no-referrer-when-downgrade">
+            </a>
+        </div>
+    </noscript>
     <!-- End of Statcounter Code -->
 
 </body>
