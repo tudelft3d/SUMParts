@@ -217,7 +217,7 @@
                 <div class="columns is-centered has-text-centered">
                     <div class="column is-four-fifths">
                         <h2 class="title is-3">Video Presentation</h2>
-                        <div class="publication-video" height="100%">
+                        <div class="publication-video" width="100%">
                             <!--style="max-width: 100%; overflow: hidden; text-align: center;"-->
                             <iframe src="https://www.youtube-nocookie.com/embed/CUi1Hf_GSlQ?si=zCqNQsab2DUkKwW5" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
@@ -358,6 +358,49 @@
         </div>
     </section>
 
+
+    <section class="section" style="padding: 0;">
+        <div class="container is-max-desktop" style="padding: 0;">
+            <!-- 修改1：添加第三个column -->
+            <div class="columns is-gapless is-multiline" style="margin: 0;">
+                <!-- 列1 -->
+                <div class="column is-one-third">
+                    <video controls
+                           autoplay
+                           muted
+                           loop
+                           playsinline
+                           style="width: 100%; display: block;">
+                        <source src="./static/videos/facade_windows_tex.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <!-- 列2 -->
+                <div class="column is-one-third">
+                    <video controls
+                           autoplay
+                           muted
+                           loop
+                           playsinline
+                           style="width: 100%; display: block;">
+                        <source src="./static/videos/cross_mark_tex.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <!-- 列3：新增列 -->
+                <div class="column is-one-third">
+                    <video controls
+                           autoplay
+                           muted
+                           loop
+                           playsinline
+                           style="width: 100%; display: block;">
+                        <source src="./static/videos/low_vegetation.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
