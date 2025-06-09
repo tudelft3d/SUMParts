@@ -400,6 +400,24 @@
         </div>
     </section>
 
+    <section class="hero">
+        <div class="hero-body">
+            <div>
+                <div class="container is-max-desktop">
+                    <h2 class="title is-3 has-text-centered">Benchmark Datasets</h2>
+                    <div style="max-width: 100%; overflow: hidden; text-align: center;">
+                        <img src="static/images/label_distrib.png"
+                             alt="Benchmarks"
+                             style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                    </div>
+                    <p class="content has-text-justified">
+                        We defined two label types: face (12 labels, excluding `unclassified`) and pixel (19 labels, excluding `terrain` and `unclassified`). For face labels, we evaluated four mesh point cloud sampling strategies; random/Poisson-disk sampling matched superpixel texture sample size, while face-centered sampling matched mesh face count. For pixel labels, we tested three sampling methods: random, Poisson-disk, and superpixel texture sampling. We also evaluated state-of-the-art 3D semantic segmentation methods, including mesh-based (RF-MRF, SUM-RF, PSSNet) and point cloud-based (PointNet, PointNet++, SPG, SparseConvUnet, RandLA-Net, KPConv, PointNext, PointTransV3, PointVector) approaches.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="section" style="padding: 0;">
         <div class="container is-max-desktop" style="padding: 0;">
             <!-- 修改1：移除 columns 容器 -->
@@ -414,24 +432,6 @@
                        style="width: 100%; display: block;">
                     <source src="./static/videos/annotation_results.mp4" type="video/mp4">
                 </video>
-            </div>
-        </div>
-    </section>
-
-    <section class="hero">
-        <div class="hero-body">
-            <div>
-                <div class="container is-max-desktop">
-                    <h2 class="title is-3 has-text-centered">Benchmarks</h2>
-                    <div style="max-width: 100%; overflow: hidden; text-align: center;">
-                        <img src="static/images/label_distrib.png"
-                             alt="Benchmarks"
-                             style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-                    </div>
-                    <p class="content has-text-justified">
-                        We defined two label types: face (12 labels, excluding `unclassified`) and pixel (19 labels, excluding `terrain` and `unclassified`). For face labels, we evaluated four mesh point cloud sampling strategies; random/Poisson-disk sampling matched superpixel texture sample size, while face-centered sampling matched mesh face count. For pixel labels, we tested three sampling methods: random, Poisson-disk, and superpixel texture sampling. We also evaluated state-of-the-art 3D semantic segmentation methods, including mesh-based (RF-MRF, SUM-RF, PSSNet) and point cloud-based (PointNet, PointNet++, SPG, SparseConvUnet, RandLA-Net, KPConv, PointNext, PointTransV3, PointVector) approaches.
-                    </p>
-                </div>
             </div>
         </div>
     </section>
@@ -549,7 +549,7 @@
             </div>
         </noscript>
     </div>
-        <!-- End of Statcounter Code -->
+    <!-- End of Statcounter Code -->
 
 </body>
   </html>
