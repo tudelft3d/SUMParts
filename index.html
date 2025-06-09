@@ -317,8 +317,10 @@
 
     <section class="section" style="padding: 0;">
         <div class="container is-max-desktop" style="padding: 0;">
-            <div class="columns is-gapless" style="margin: 0;">
-                <div class="column">
+            <!-- 修改1：添加第三个column -->
+            <div class="columns is-gapless is-multiline" style="margin: 0;">
+                <!-- 列1 -->
+                <div class="column is-one-third">
                     <video controls
                            autoplay
                            muted
@@ -328,7 +330,9 @@
                         <source src="./static/videos/dormer_cars_matching.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="column">
+
+                <!-- 列2 -->
+                <div class="column is-one-third">
                     <video controls
                            autoplay
                            muted
@@ -336,6 +340,18 @@
                            playsinline
                            style="width: 100%; display: block;">
                         <source src="./static/videos/trees_extraction.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <!-- 列3：新增列 -->
+                <div class="column is-one-third">
+                    <video controls
+                           autoplay
+                           muted
+                           loop
+                           playsinline
+                           style="width: 100%; display: block;">
+                        <source src="./static/videos/planar_seg_matching.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
