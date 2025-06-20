@@ -105,7 +105,7 @@ ipch/
 *.exp
 *.lib
 *.bin
-*.obj
+#*.obj
 *.list
 *.check_cache
 
