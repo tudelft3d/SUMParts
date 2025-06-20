@@ -50,7 +50,7 @@ artifacts/
 *_i.h
 *.ilk
 *.meta
-*.obj
+#*.obj
 *.pch
 *.pdb
 *.pgc
@@ -89,7 +89,7 @@ ipch/
 *.vsp
 *.vspx
 *.sap
-*.obj
+#*.obj
 *.pdb
 *.dir
 *.tlog
