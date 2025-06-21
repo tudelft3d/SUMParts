@@ -159,7 +159,7 @@
                              alt="Dataset Overview"
                              style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
                     </div>
-                    <p class="content has-text-justified" style="margin-top: 2rem;">
+                    <p class="content has-text-justified" style="margin-top: 1rem;">
                         SUM Parts provides part-level semantic segmentation of urban textured meshes, covering 2.5km² with 21 classes. From left to right: textured mesh, face-based and texture-based annotations. Classes include unclassified
                         <img src="static/images/icons/unclassified.png" alt="unclassified" style="height:0.8em; vertical-align:middle">,
                         terrain
@@ -311,7 +311,7 @@
                              alt="Annotation"
                              style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
                     </div>
-                    <p class="content has-text-justified" style="margin-top: 2rem;">
+                    <p class="content has-text-justified" style="margin-top: 1rem;">
                         Our annotation aims to achieve precise semantic labeling with significantly improved efficiency for urban meshes. Our tool features two main modules for part-level semantic annotation: face-based annotation for triangle faces and texture-based annotation for texture pixels.  We enhance the efficiency of both modules by incorporating interactive selection and template-matching strategies. We invited five individuals with experience in remote sensing to manually annotate the dataset using our tool: two focused on face-based annotation, two on texture pixel-based annotation, and one reviewed and corrected the annotations. The entire annotation process took approximately 640 hours in total.
                     </p>
                 </div>
@@ -468,7 +468,7 @@
                              alt="Benchmarks"
                              style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
                     </div>
-                    <p class="content has-text-justified" style="margin-top: 2rem;">
+                    <p class="content has-text-justified" style="margin-top: 1rem;">
                         We defined two label types: face (12 labels, excluding `unclassified`) and pixel (19 labels, excluding `terrain` and `unclassified`). For face labels, we evaluated four mesh point cloud sampling strategies; random/Poisson-disk sampling matched superpixel texture sample size, while face-centered sampling matched mesh face count. For pixel labels, we tested three sampling methods: random, Poisson-disk, and superpixel texture sampling. We also evaluated state-of-the-art 3D semantic segmentation methods, including mesh-based (RF-MRF, SUM-RF, PSSNet) and point cloud-based (PointNet, PointNet++, SPG, SparseConvUnet, RandLA-Net, KPConv, PointNext, PointTransV3, PointVector) approaches.
                     </p>
                 </div>
@@ -476,7 +476,7 @@
         </div>
     </section>
 
-    <section class="section" style="padding: 0;">
+    <section class="section" style="padding: 0 0 2rem 0;">
         <div class="container is-max-desktop" style="padding: 0;">
             <div class="column">
                 <h2 class="title is-3 has-text-centered">Video Demo</h2>
@@ -488,7 +488,7 @@
                        style="width: 100%; display: block;">
                     <source src="./static/videos/annotation_results.mp4" type="video/mp4">
                 </video>
-                <p class="content has-text-centered" style="margin-top: 2rem;">
+                <p class="content has-text-centered" style="margin-top: 1rem;">
                     Top left: Textured mesh;
                     Top right: Wireframes;
                     Bottom left: Face-labeled mesh;
@@ -510,7 +510,7 @@
                            style="width: 100%; display: block;">
                         <source src="./static/videos/face_label_pred.mp4" type="video/mp4">
                     </video>
-                    <p class="content has-text-centered" style="margin-top: 2rem;">Face-labeling comparision</p>
+                    <p class="content has-text-centered" style="margin-top: 1rem;">Face-labeling comparision</p>
                 </div>
                 <div class="column">
                     <video controls
@@ -521,7 +521,7 @@
                            style="width: 100%; display: block;">
                         <source src="./static/videos/tex_label_pred.mp4" type="video/mp4">
                     </video>
-                    <p class="content has-text-centered" style="margin-top: 2rem;">
+                    <p class="content has-text-centered" style="margin-top: 1rem;">
                         Pixel-labeling comparision
                     </p>
                 </div>
